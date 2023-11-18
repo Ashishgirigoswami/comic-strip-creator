@@ -1,0 +1,181 @@
+/* Existing CSS remains unchanged */
+
+/* Improved layout for input with image */
+.input-with-image {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for textarea and image */
+textarea {
+  flex: 1;
+  resize: none;
+  width: 80%; /* Decreased width of textarea */
+  margin-right: 10px; /* Added spacing between textarea and image */
+}
+
+.image-loader {
+  position: absolute;
+  bottom: -15px; /* Push the loader below the textarea */
+  left: 50%; /* Align the loader horizontally */
+  transform: translateX(-50%);
+  display: none;
+}
+
+ /* Custom styles for the loading bar */
+ .loading-bar {
+  height: 15px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: #378967;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+}
+
+/* Form styles */
+#comicForm1 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm2 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm3 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm4 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm5 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm6 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm7 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm8 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm9 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#comicForm10 {
+  background-color: #f7f7f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.mb-3 {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.form-control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #378967;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #2d6a4f;
+}
+
+
+/* Comic image container */
+.comic-image-container {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+
+/* Existing styles remain unchanged */
+
+/* Modified style for comic image */
+.comic-image {
+  max-width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hide the image */
+}
+
+.image-loader {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.spinner-border {
+  display: none; /* Initially hide the spinner */
+}
+
+/* When the image is loading, hide the image and display the spinner */
+.comic-image.loading {
+  display: none;
+}
+
+.comic-image.loading + .image-loader .spinner-border {
+  display: inline-block;
+}

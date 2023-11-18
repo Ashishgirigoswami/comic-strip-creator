@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comic Strip Generator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .loading-bar {
+      height: 15px;
+      background-color: #ddd;
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+
+    .progress {
+      width: 0;
+      height: 100%;
+      background-color: #378967;
+    }
+    .navbar {
+      background-color: #635252bd;
+      color: #424242;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px 0;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <h1>Comic Strip Generator</h1>
+  </nav>
+  <div class="container mt-4">
+    <form id="comicForm1">
+      <div class="mb-3 position-relative">
+        <label for="panel1" class="form-label">Panel 1:</label>
+        <textarea id="panel1" name="panel1" class="form-control" rows="1" placeholder="Enter text for panel 1" required></textarea>
+      </div>
+      <button id="submit1" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage1" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader1">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar1" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm2">
+      <div class="mb-3 position-relative">
+        <label for="panel2" class="form-label">Panel 2:</label>
+        <textarea id="panel2" name="panel2" class="form-control" rows="1" placeholder="Enter text for panel 2" required></textarea>
+      </div>
+      <button id="submit2" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage2" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader2">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar2" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm3">
+      <div class="mb-3 position-relative">
+        <label for="panel3" class="form-label">Panel 3:</label>
+        <textarea id="panel3" name="panel3" class="form-control" rows="1" placeholder="Enter text for panel 3" required></textarea>
+      </div>
+      <button id="submit3" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage3" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader3">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar3" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm4">
+      <div class="mb-3 position-relative">
+        <label for="panel4" class="form-label">Panel 4:</label>
+        <textarea id="panel4" name="panel4" class="form-control" rows="1" placeholder="Enter text for panel 4" required></textarea>
+      </div>
+      <button id="submit4" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage4" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader4">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar4" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm5">
+      <div class="mb-3 position-relative">
+        <label for="panel5" class="form-label">Panel 5:</label>
+        <textarea id="panel5" name="panel5" class="form-control" rows="1" placeholder="Enter text for panel 5" required></textarea>
+      </div>
+      <button id="submit5" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage5" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader5">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar5" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm6">
+      <div class="mb-3 position-relative">
+        <label for="panel6" class="form-label">Panel 6:</label>
+        <textarea id="panel6" name="panel6" class="form-control" rows="3" placeholder="Enter text for panel 6" required></textarea>
+      </div>
+      <button id="submit6" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage6" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader6">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar6" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm7">
+      <div class="mb-3 position-relative">
+        <label for="panel7" class="form-label">Panel 7:</label>
+        <textarea id="panel7" name="panel7" class="form-control" rows="3" placeholder="Enter text for panel 7" required></textarea>
+      </div>
+      <button id="submit7" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage7" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader7">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar7" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm8">
+      <div class="mb-3 position-relative">
+        <label for="panel8" class="form-label">Panel 8:</label>
+        <textarea id="panel8" name="panel8" class="form-control" rows="3" placeholder="Enter text for panel 8" required></textarea>
+      </div>
+      <button id="submit8" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage8" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader8">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar8" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm9">
+      <div id="submit9" class="mb-3 position-relative">
+        <label for="panel9" class="form-label">Panel 9:</label>
+        <textarea id="panel9" name="panel9" class="form-control" rows="3" placeholder="Enter text for panel 9" required></textarea>
+      </div>
+      <button type="submit9" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage9" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader9">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar9" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <div class="container mt-4">
+    <form id="comicForm10">
+      <div class="mb-3 position-relative">
+        <label for="panel10" class="form-label">Panel 10:</label>
+        <textarea id="panel10" name="panel10" class="form-control" rows="3" placeholder="Enter text for panel 10" required></textarea>
+      </div>
+      <button id="submit10" type="submit" class="btn btn-primary">Generate Comic</button>
+      <div class="comic-image-container">
+        <img class="comic-image" id="comicImage10" src="placeholder.png" alt="Loading...">
+        <div class="image-loader" id="imageLoader10">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- Loading bar -->
+    <div class="loading-bar">
+      <div id="loadingBar10" class="progress",style></div>
+    </div>
+    <div id="comicDisplay" class="row justify-content-center">
+      <!-- Display generated comic panels here -->
+    </div>
+  </div>
+  <footer class="footer">
+    <p>Comic Strip Generator - Created by Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
